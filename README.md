@@ -59,6 +59,10 @@ Chromium を使わない構成のため軽量で、オフライン時も最後�
     systemctl --user enable --now signage-pull.timer
     systemctl --user status signage-pull.timer --no-pager
 
+### 3.5) 初回 PNG を生成（feh を設定する前に1回だけ実行）
+    systemctl --user start signage-pull.service
+    ls -l --full-time "$HOME/signage/frame.png"    # 生成されたことを確認
+
 ### 4) feh をログイン時に全画面起動
     mkdir -p ~/.config/autostart
     cp autostart/signage-view.desktop ~/.config/autostart/
