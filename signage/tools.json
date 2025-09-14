@@ -1,0 +1,8 @@
+{
+  "updatedAt": "2025-09-14T00:00:00Z",
+  "items": [
+    { "id": 1, "model": "ABC-100 長い型式の例ABCDEFGHIJ", "lot": "L001", "status": "OK" },
+    { "id": 2, "model": "XYZ-200", "lot": "L002", "status": "CHECK" },
+    { "id": 3, "model": "QWE-300", "lot": "L003", "status": "NG" }
+  ]
+}
