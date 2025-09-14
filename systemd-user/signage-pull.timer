@@ -1,0 +1,11 @@
+[Unit]
+Description=Run signage-pull.service every minute
+
+[Timer]
+OnBootSec=15s
+OnUnitActiveSec=60s
+Persistent=true
+Unit=signage-pull.service
+
+[Install]
+WantedBy=timers.target
