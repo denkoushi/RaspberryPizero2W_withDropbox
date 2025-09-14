@@ -37,7 +37,7 @@ Chromium を使わない構成のため軽量で、オフライン時も最後�
 
 ### 2) リポジトリを取得
     cd ~
-    git clone https://github.com/<YourGitHubUser>/RaspberryPizero2W_withDropbox.git
+    git clone https://github.com/denkoushi/RaspberryPizero2W_withDropbox.git
     cd RaspberryPizero2W_withDropbox
 
 ### 3) ファイルを所定の場所へ配置
