@@ -1,6 +1,0 @@
-[Unit]
-Description=Pull signage data from Dropbox (oneshot)
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/pull_signage.sh
