@@ -12,11 +12,12 @@ TMP="${JSON}.tmp"
 
 mkdir -p "$DIR"
 
-# 取得（3回リトライ、TLS、短いタイムアウト）
+# 圧縮転送を有効化（--compressed）
 curl --proto '=https' --tlsv1.2 --retry 3 --retry-delay 2 --max-time 20 \
+     --compressed \
      -fsSL "$URL" -o "$TMP"
 
-# JSON妥当性チェック（壊れていれば採用しない）
+# JSON 妥当性チェック
 python3 - <<'PY' "$TMP"
 import json, sys
 json.load(open(sys.argv[1], encoding='utf-8'))
@@ -25,5 +26,5 @@ PY
 # 原子的置換
 mv -f "$TMP" "$JSON"
 
-# PNG 生成（失敗しても既存表示は維持）
+# PNG を生成（失敗しても既存表示は維持）
 "$RENDER" "$JSON" "$PNG" || true
