@@ -5,6 +5,8 @@
 目的：このリポジトリを使って **Raspberry Pi Zero 2 W** にサイネージ環境を構築できるようになる。  
 構成：Dropbox の JSON を取得 → Python(Pillow) で PNG を生成 → feh で全画面表示。ブラウザは使いません。
 
+> ドキュメントの役割分担は `docs/documentation-guidelines.md` を参照してください。
+
 ---
 
 ## 前提
