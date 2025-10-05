@@ -60,6 +60,8 @@ Raspberry Pi 上で動作中のサイネージ（feh の全画面表示＋Dropbo
 このリポジトリでは autostart 方式を採用していますが、過去の検証で  
 `systemd` のサービスを作っていた場合は、下記で無効化できます（存在しない場合は無視されます）。
 
+> ドキュメントの役割分担は `docs/documentation-guidelines.md` を参照してください。
+
 - 旧サービスの停止と無効化  
     sudo systemctl disable --now signage-view.service  || true  
     sudo systemctl disable --now signage-http.service  || true
