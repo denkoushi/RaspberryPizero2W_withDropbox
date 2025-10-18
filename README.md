@@ -8,6 +8,7 @@ Dropbox 上の JSON を取得し、Python (Pillow) で PNG を生成して `feh`
 - 一時停止・再開などの運用メモ: `OPERATIONS.md`
 - 要件・今後の課題: `docs/requirements.md`
 - ドキュメント運用ルール: `docs/documentation-guidelines.md`
+- エージェント向け指針: `docs/AGENTS.md`
 
 ## セットアップの流れ（概要）
 1. 必要パッケージをインストールし、リポジトリをクローン。
