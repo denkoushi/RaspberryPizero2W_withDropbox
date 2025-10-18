@@ -12,6 +12,7 @@ RaspberryPizero2W_withDropbox リポジトリのドキュメント役割と記�
 | `OPERATIONS.md` | 現場担当 | 一時停止・再開・状態確認など日常運用のコマンド。 |
 | `docs/requirements.md` | プロダクトオーナー / 開発者 | 要件、優先度、未対応タスク、決定事項。 |
 | `docs/documentation-guidelines.md` | 全員 | 本ガイドライン。 |
+| `docs/AGENTS.md` | エージェント / 自動化タスク | 作業フローとチェックリスト。 |
 | `HISTORY.md` | 開発者 | 過去の変更履歴。TODO は `docs/requirements.md` へ移す。 |
 
 ## 2. 記述ルール
