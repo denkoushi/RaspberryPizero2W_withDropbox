@@ -19,6 +19,11 @@ Dropbox 上の JSON を取得し、Python (Pillow) で PNG を生成して `feh`
 
 詳細なコマンドやトラブルシュートは `docs/STEP_BY_STEP_SETUP.md` に集約しています。
 
+## 他システムとの連携方針
+- **Window A（tool-management-system02）**: `part_locations` や工程情報を提供する API/CSV との連携を計画中。サイネージに所在・作業進捗を表示する場合は Window A 側の JSON 生成プロセスと整合させる。
+- **OnSiteLogistics（ハンディリーダ）**: Window A の `POST /api/v1/scans` で登録されたデータを間接的に参照し、Dropbox 経由でサイネージへ配信する。フォーマット確定後は `signage/render_signage.py` のテンプレートに反映する。
+- **Window B（DocumentViewer）**: 要領書／計画データの更新状況を通知するためのメタ情報を取り込む構想あり。必要に応じて Dropbox JSON に追加フィールドを設計する。
+
 ## フォルダ構成
 ```
 RaspberryPizero2W_withDropbox/
