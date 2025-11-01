@@ -4,6 +4,7 @@
 
 目的：このリポジトリを使って **Raspberry Pi Zero 2 W** にサイネージ環境を構築できるようになる。  
 構成：Dropbox の JSON を取得 → Python(Pillow) で PNG を生成 → feh で全画面表示。ブラウザは使いません。
+Pi5 (RaspberryPiServer) から提供される JSON を Dropbox 経由で受け取り、サイネージへ表示する構成を想定。Pi5 のホスト名が `raspi-server-*.local` となる場合は JSON 生成側の設定も合わせて更新する。
 
 > ドキュメントの役割分担は `docs/documentation-guidelines.md` を参照してください。
 

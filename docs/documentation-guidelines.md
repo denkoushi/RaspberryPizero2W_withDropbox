@@ -14,6 +14,7 @@ RaspberryPizero2W_withDropbox リポジトリのドキュメント役割と記�
 | `docs/documentation-guidelines.md` | 全員 | 本ガイドライン。 |
 | `docs/AGENTS.md` | エージェント / 自動化タスク | 作業フローとチェックリスト。 |
 | `HISTORY.md` | 開発者 | 過去の変更履歴。TODO は `docs/requirements.md` へ移す。 |
+| `docs/docs-index.md` | 全員 | 文書の索引。追加・削除時は必ず更新し、棚卸しの基準とする。 |
 
 ## 2. 記述ルール
 - 詳細な手順は `docs/STEP_BY_STEP_SETUP.md` または `docs/APPLY_UPDATES.md` に集約し、README には概要のみ記載する。
@@ -22,10 +23,10 @@ RaspberryPizero2W_withDropbox リポジトリのドキュメント役割と記�
 - 文書は日本語を基本とし、外部共有が必要な場合は補足で英語を併記する。
 
 ## 3. 更新手順
-1. 追加・修正したい内容のカテゴリを確認し、対応する文書を選ぶ。
+1. 追加・修正したい内容のカテゴリを確認し、対応する文書を選ぶ（必要なら `docs/docs-index.md` で位置づけを確認する）。
 2. 既存記述と重複していないか確認し、必要なら統合または移動を行う。
 3. 文書間のリンク（例: README からの参照）が最新か確認する。
-4. コミットメッセージには「どの文書を」「どの目的で」更新したかを含める。
+4. コミットメッセージには「どの文書を」「どの目的で」更新したかを含める。索引が変わる場合は `docs/docs-index.md` も更新する。
 
 ## 4. 定期レビュー
 - 四半期に一度、`docs/STEP_BY_STEP_SETUP.md` と `docs/requirements.md` を中心に棚卸しし、古い手順や完了済み TODO が残っていないか確認する。

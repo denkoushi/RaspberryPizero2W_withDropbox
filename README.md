@@ -7,6 +7,7 @@ Dropbox 上の JSON を取得し、Python (Pillow) で PNG を生成して `feh`
 - 運用時の更新手順 (Git Pull): `docs/APPLY_UPDATES.md`
 - 一時停止・再開などの運用メモ: `OPERATIONS.md`
 - 要件・今後の課題: `docs/requirements.md`
+- ドキュメント索引（棚卸し状況）: `docs/docs-index.md`
 - ドキュメント運用ルール: `docs/documentation-guidelines.md`
 - エージェント向け指針: `docs/AGENTS.md`
 
@@ -20,6 +21,7 @@ Dropbox 上の JSON を取得し、Python (Pillow) で PNG を生成して `feh`
 詳細なコマンドやトラブルシュートは `docs/STEP_BY_STEP_SETUP.md` に集約しています。
 
 ## 他システムとの連携方針
+- RaspberryPiServer（Pi5）: 所在データや作業計画を Dropbox JSON へ変換する場合は Pi5 側で JSON 生成スクリプトを実行し、本リポジトリの `signage/pull_signage.sh` で取得する。Pi5 のホスト名が `raspi-server-*.local` になる場合は `/etc/hosts` または Avahi で解決できることを確認した上で `curl` を実行する。
 - **Window A（tool-management-system02）**: `part_locations` や工程情報を提供する API/CSV との連携を計画中。サイネージに所在・作業進捗を表示する場合は Window A 側の JSON 生成プロセスと整合させる。
 - **OnSiteLogistics（ハンディリーダ）**: Window A の `POST /api/v1/scans` で登録されたデータを間接的に参照し、Dropbox 経由でサイネージへ配信する。フォーマット確定後は `signage/render_signage.py` のテンプレートに反映する。
 - **Window B（DocumentViewer）**: 要領書／計画データの更新状況を通知するためのメタ情報を取り込む構想あり。必要に応じて Dropbox JSON に追加フィールドを設計する。

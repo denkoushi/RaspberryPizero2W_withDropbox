@@ -9,7 +9,7 @@ RaspberryPizero2W_withDropbox リポジトリで作業するエージェント�
   - `docs/STEP_BY_STEP_SETUP.md`: 初期セットアップ手順
   - `docs/APPLY_UPDATES.md`: GitHub から更新を取り込む手順
   - `OPERATIONS.md`: 停止・再開などの日常運用コマンド
-  - `docs/requirements.md`: 要件・将来課題
+  - `docs/requirements.md`: 要件・将来課題（Pi5 サーバーから取得するデータや同期頻度を含む）
   - `docs/documentation-guidelines.md`: ドキュメントの役割と更新ルール
 
 ## 2. 作業フロー
@@ -20,7 +20,7 @@ RaspberryPizero2W_withDropbox リポジトリで作業するエージェント�
 5. スクリプトや手順を更新した場合は、関連ドキュメント（README、STEP_BY_STEP_SETUP 等）を忘れずに更新する。
 
 ## 3. コマンド提示ルール
-- すべて日本語で説明する。
+- すべて日本語で説明する。Pi5/RaspberryPiServer と連携する場合はホスト名や API の前提を明記する。
 - コマンドはコードブロックで提示し、以下をセットで示す:
   1. 実行コマンド
   2. 期待される結果の目安
@@ -36,6 +36,7 @@ RaspberryPizero2W_withDropbox リポジトリで作業するエージェント�
 - 決定事項は `docs/requirements.md` 等に反映し、関連文書も更新する。
 
 ## 6. 参考リンク
+- ドキュメント索引: `docs/docs-index.md`
 - ドキュメント運用ガイドライン: `docs/documentation-guidelines.md`
 - 初期セットアップ: `docs/STEP_BY_STEP_SETUP.md`
 - 更新手順: `docs/APPLY_UPDATES.md`
