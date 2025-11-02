@@ -25,6 +25,7 @@ Dropbox 上の JSON を取得し、Python (Pillow) で PNG を生成して `feh`
 - **Window A（tool-management-system02）**: `part_locations` や工程情報を提供する API/CSV との連携を計画中。サイネージに所在・作業進捗を表示する場合は Window A 側の JSON 生成プロセスと整合させる。
 - **OnSiteLogistics（ハンディリーダ）**: Window A の `POST /api/v1/scans` で登録されたデータを間接的に参照し、Dropbox 経由でサイネージへ配信する。フォーマット確定後は `signage/render_signage.py` のテンプレートに反映する。
 - **Window B（DocumentViewer）**: 要領書／計画データの更新状況を通知するためのメタ情報を取り込む構想あり。必要に応じて Dropbox JSON に追加フィールドを設計する。
+- Pi5・Window A・Pi Zero で共有する API トークンは RaspberryPiServer RUNBOOK（4章）に従い、同じ値を各端末の環境設定へ反映する。Pi Zero 側で API を直接呼び出す構成へ移行した際は `/etc/onsitelogistics/config.json`（または同等の設定ファイル）へ新しいトークンを反映し、ローテーション時は Pi5/Window A と同時に更新する。
 
 ## フォルダ構成
 ```

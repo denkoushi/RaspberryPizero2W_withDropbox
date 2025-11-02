@@ -47,7 +47,7 @@ Raspberry Pi Zero 2 W × Dropbox サイネージ（Window C）の現況・要件
 - **性能**: 取得〜描画〜表示まで 1 分以内（デフォルト）。JSON レコード数は 1,000 件程度を上限とし、描画時間を監視する。
 - **可用性**: `autostart` と `systemd --user` によりログイン直後から自動起動。`loginctl enable-linger` でセッション切断後も継続させる。
 - **保守性**: 実機更新は「GitHub → 作業フォルダ → `/usr/local/bin/` / `$HOME/signage` へ同期」の二段階。`rsync` と `git status` で差分確認。
-- **セキュリティ**: Dropbox 共有リンクは定期ローテーションを前提とし、更新時は `pull_signage.sh` と systemd ユニット環境ファイルの双方を更新する。
+- **セキュリティ**: Dropbox 共有リンクは定期ローテーションを前提とし、更新時は `pull_signage.sh` と systemd ユニット環境ファイルの双方を更新する。Pi5／Window A と連携する際の Bearer トークンは RaspberryPiServer RUNBOOK（4章）に従い同じ値を反映し、Pi Zero 側の設定（例: `/etc/onsitelogistics/config.json`）も同時に更新する。
 
 ---
 
